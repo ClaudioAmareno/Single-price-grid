@@ -227,7 +227,7 @@
 	.text-wrapper {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1.17fr;
-		margin: 0 21.5%;
+		margin: 0 20rem;
 		text-align: left;
 		border-radius: 1rem;
 	}
@@ -300,5 +300,17 @@
 			font-size: 1.4rem;
 			line-height: 1.7rem;
 		}
+	}
+}
+
+@media (min-width: 1366px){
+	.text-wrapper {
+		margin: 0 40rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	.text-wrapper {
+		margin: 0 64rem;
 	}
 }
