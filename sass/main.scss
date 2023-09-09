@@ -1,0 +1,155 @@
+@use './color' as color;
+@import './various';
+
+.text-wrapper {
+	margin: 3rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.first-wrapper {
+	background-color: color.$White;
+	padding: 0 2.3rem 0 2.5rem;
+
+	&__heading {
+		padding: 2.8rem 0 2.5rem 0;
+		font-size: 2rem;
+		font-weight: 700;
+		color: color.$Cyan;
+	}
+	&__return-money {
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: color.$Bright-Yellow;
+	}
+	&__info {
+		padding: 1.1rem 0 3rem 0;
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+		color: color.$Grayish-Blue;
+	}
+}
+
+.second-wrapper {
+	background-color: color.$Cyan;
+	color: color.$White;
+	padding: 0 2.5rem;
+
+	&__heading {
+		padding: 2.5rem 0 1.5rem 0;
+		font-size: 1.9rem;
+	}
+
+	&__price {
+		display: flex;
+		align-items: center;
+		font-size: 3rem;
+		font-weight: 700;
+		padding-bottom: 1rem;
+
+		&--time {
+			color: color.$Cyan-lower;
+			font-size: 1.5rem;
+			padding-left: 1rem;
+		}
+	}
+	&__info {
+		font-size: 1.6rem;
+		padding: 0rem 0 3rem 0;
+	}
+
+	&__btn {
+		min-width: 100%;
+		color: color.$White;
+		background-color: color.$Bright-Yellow;
+		margin-bottom: 2rem;
+		font-size: 1.7rem;
+		padding: 1.5rem 0;
+		border-radius: 0.5rem;
+		border-style: none;
+	}
+}
+.third-wrapper {
+	background-color: color.$Cyan-lower;
+	padding: 0 2.5rem;
+
+	&__heading {
+		padding: 2.5rem 0 2rem 0;
+		font-size: 1.9rem;
+		color: color.$White;
+	}
+
+	&__info {
+		font-size: 1.4rem;
+		color: color.$Light-Gray;
+		padding-bottom: 0.3rem;
+	}
+
+	&__info:nth-last-child(1) {
+		padding-bottom: 2.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.text-wrapper {
+        display: grid;
+        margin: 0 64rem;
+        grid-template-columns: 1fr 1fr;
+		border-radius: 1rem;
+		overflow: hidden;
+	}
+    
+	.first-wrapper {
+		grid-column: 1/3;
+		grid-row: 1/2;
+		padding-left: 4.3rem;
+
+		&__heading {
+			padding-top: 4.3rem;
+			font-size: 2.3rem;
+		}
+
+		&__return-money {
+			font-size: 1.75rem;
+		}
+
+		&__info {
+			padding: 0rem 3rem 4rem 0;
+			font-size: 1.6rem;
+			line-height: 2.5rem;
+		}
+	}
+
+	.second-wrapper {
+		grid-column: 1/2;
+		padding-left: 4rem;
+
+		&__heading {
+			padding: 4.2rem 0 1.5rem 0;
+			font-size: 1.8rem;
+		}
+
+        &__price{
+            font-size: 3.2rem;
+        }
+
+		&__btn {
+			min-width: 95%;
+			margin-bottom: 4rem;
+			font-size: 1.7rem;
+		}
+	}
+
+	.third-wrapper {
+		grid-column: 2/3;
+		padding-left: 4rem;
+
+		&__heading {
+			padding-top: 4.2rem;
+			font-size: 1.9rem;
+			color: color.$White;
+		}
+
+	}
+}
