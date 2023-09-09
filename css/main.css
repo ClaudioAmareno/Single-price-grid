@@ -55,6 +55,7 @@ body {
 .second-wrapper__heading {
   padding: 2.5rem 0 1.5rem 0;
   font-size: 1.9rem;
+  font-weight: 700;
 }
 .second-wrapper__price {
   display: flex;
@@ -90,6 +91,7 @@ body {
 .third-wrapper__heading {
   padding: 2.5rem 0 2rem 0;
   font-size: 1.9rem;
+  font-weight: 700;
   color: hsl(0, 100%, 100%);
 }
 .third-wrapper__info {
