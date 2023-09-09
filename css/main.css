@@ -22,6 +22,7 @@ body {
   margin: 3rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 1px 1px 20px hsl(218, 22%, 67%);
 }
 
 .first-wrapper {
