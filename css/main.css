@@ -95,6 +95,9 @@ body {
   font-weight: 700;
   color: hsl(0, 100%, 100%);
 }
+.third-wrapper__list {
+  list-style: none;
+}
 .third-wrapper__info {
   font-size: 1.4rem;
   color: hsl(204, 43%, 93%);

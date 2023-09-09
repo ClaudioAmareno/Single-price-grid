@@ -57,6 +57,7 @@
 			padding-left: 1rem;
 		}
 	}
+
 	&__info {
 		font-size: 1.6rem;
 		padding: 0rem 0 3rem 0;
@@ -83,7 +84,10 @@
 		font-weight: 700;
 		color: color.$White;
 	}
-
+	&__list {
+		list-style: none;
+	  }
+	  
 	&__info {
 		font-size: 1.4rem;
 		color: color.$Light-Gray;
