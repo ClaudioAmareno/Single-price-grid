@@ -2,6 +2,7 @@
 @import './various';
 
 .text-wrapper {
+    max-width: 100vw;
 	margin: 3rem;
 	border-radius: 0.5rem;
 	overflow: hidden;
@@ -92,6 +93,7 @@
 }
 
 @media (min-width: 992px) {
+
 	.text-wrapper {
         display: grid;
         margin: 0 64rem;
